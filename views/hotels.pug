@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Hotels in City
+    if hotels.length
+      each hotel in hotels
+        div.hotel
+          h2 #{hotel.name}
+          p Address: #{hotel.address.countryCode}
+          p Latitude: #{hotel.geoCode.latitude}, Longitude: #{hotel.geoCode.longitude}
+          p Last Update: #{hotel.lastUpdate}
+    else
+      p No hotels found.
+
+  //Footer
+  footer
+      p &copy; 2024 Travel Companion. All rights reserved.  

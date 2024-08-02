@@ -1,0 +1,166 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('/images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent background */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+
+To add a background image to your index.pug, you need to update your CSS file to include styles for the background image. Below is how you can do it:
+
+CSS (public/css/style.css)
+css
+Copy code
+body {
+    font-family: Arial, sans-serif;
+    background: url('/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+div.hotel {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.weather-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.weather-container h2 {
+  margin-top: 0;
+}
+
+.weather-container p {
+  margin: 0.5rem 0;
+}
+
+
+footer {
+  background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent background */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}

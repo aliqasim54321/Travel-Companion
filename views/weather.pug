@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Weather Forecast
+    if weather
+      div.weather-container
+        h2 Weather in #{weather.name}
+        p Description: #{weather.weather[0].description}
+        p Temperature: #{weather.main.temp}K
+        p Humidity: #{weather.main.humidity}%
+    else
+      p No weather data available.
+  //Footer
+  footer
+      p &copy; 2024 Travel Companion. All rights reserved. 

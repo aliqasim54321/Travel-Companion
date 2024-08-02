@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Travel Companion
+    
+    // Form for Weather Search
+    form(action="/weather" method="get")
+      div
+        label(for="city") Enter City Name to Get Weather:
+        input(type="text" name="city" id="city" placeholder="e.g., Toronto" required)
+      div
+        button(type="submit") Get Weather
+
+    // Form for Hotel Search
+    form(action="/hotels" method="get")
+      div
+        label(for="cityCode") Enter City Code to Find Hotels:
+        input(type="text" name="cityCode" id="cityCode" placeholder="e.g. YYZ" required)
+      div
+        button(type="submit") Find Hotels
+    
+    // Footer
+    footer
+      p &copy; 2024 Travel Companion. All rights reserved.  
